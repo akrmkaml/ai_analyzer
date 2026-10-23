@@ -1,0 +1,19 @@
+# AI Data Analyzer 🤖📊
+
+An automated Python script that reads raw sales data, cleans it (handles missing values and duplicates), and uses **Google Gemini AI** to generate a professional analytical report automatically.
+
+## 🚀 Features
+- **Automated Data Cleaning:** Uses Pandas to remove duplicates and fill missing values.
+- **AI Integration:** Connects with Google Gemini API to act as a virtual data analyst.
+- **Report Generation:** Exports the cleaned data to a CSV file and the AI insights to a text report.
+
+## 🛠️ Tech Stack
+- Python 3.12
+- Pandas
+- Google GenAI (Gemini API)
+
+## 📂 How to use it
+1. Clone the repository.
+2. Install requirements: `pip install pandas google-genai`
+3. Add your Gemini API key in `ai_analyzer.py`
+4. Run the script: `python ai_analyzer.py`

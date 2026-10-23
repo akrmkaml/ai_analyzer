@@ -1,0 +1,17 @@
+
+import pandas as pd
+df = pd.read_csv("messy_data.csv")
+print("--- البيانات الأصلية ---")
+print(df)
+avg_age = df["Age"].mean()
+df["Age"] = df["Age"].fillna(avg_age)
+print("\n--- بعد تعويض العمر ---")
+print(df)
+df["Salary"] = df["Salary"].fillna(0)
+print("\n--- بعد تعويض الراتب ---")
+print(df)
+df = df.drop_duplicates()
+print("\n--- بعد حذف التكرار ---")
+print(df)
+df.to_csv("clean_data.csv", index=False)
+print("\nتم حفظ الملف بنجاح باسم clean_data.csv ✅")
